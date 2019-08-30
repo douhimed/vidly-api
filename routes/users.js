@@ -4,6 +4,12 @@ const router = express();
 const { validate, User } = require("../models/user");
 const bcrypt = require("bcrypt");
 
+router.get("/:id", async (req, resp) => {
+  let user = await User.findById(req.params.id);
+  if (!user) return resp.status(404).send("Invalide in the given id");
+  resp.status(200).send(user);
+});
+
 router.post("/register", async (req, resp) => {
   const { error } = validate(req.body);
   if (error) return resp.status(400).send(error.details[0].message);
