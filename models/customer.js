@@ -1,7 +1,7 @@
 const Joi = require("joi");
 const mongoose = require("mongoose");
 
-const customerSchema = mongoose.Schema({
+const customerSchema = new mongoose.Schema({
   name: { type: String, minlength: 5, maxlength: 100, required: true },
   isGold: { type: Boolean, default: false },
   phone: { type: String, required: true }

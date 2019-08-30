@@ -1,3 +1,4 @@
+const auth = require("../middlewares/auth");
 const _ = require("lodash");
 const express = require("express");
 const mongoose = require("mongoose");
@@ -21,7 +22,7 @@ router.get("/:id", async (req, resp) => {
   resp.status(200).send(rental);
 });
 
-router.post("/", async (req, resp) => {
+router.post("/", auth, async (req, resp) => {
   const { error } = validateRental(req.body);
   if (error) return resp.status(404).send(error.details[0].message);
 

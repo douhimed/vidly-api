@@ -1,12 +1,19 @@
+const auth = require("../middlewares/auth");
 const _ = require("lodash");
 const express = require("express");
 const router = express();
 const { validate, User } = require("../models/user");
 const bcrypt = require("bcrypt");
 
-router.get("/:id", async (req, resp) => {
-  let user = await User.findById(req.params.id);
-  if (!user) return resp.status(404).send("Invalide in the given id");
+router.get("/me", auth, async (req, resp) => {
+  let user = await User.findById(req.user._id).select("-password");
+  if (!user) return resp.status(404).send("Error finding the profil");
+  resp.status(200).send(user);
+});
+
+router.get("/:id", auth, async (req, resp) => {
+  let user = await User.findById(req.params.id).select("-password");
+  if (!user) return resp.status(404).send("Invalid id");
   resp.status(200).send(user);
 });
 

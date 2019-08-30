@@ -1,3 +1,4 @@
+const auth = require("../middlewares/auth");
 const _ = require("lodash");
 const express = require("express");
 const router = express();
@@ -17,7 +18,7 @@ router.get("/:id", async (req, resp) => {
   resp.status(200).send(movie);
 });
 
-router.post("/", async (req, resp) => {
+router.post("/", auth, async (req, resp) => {
   const { error } = validateMovie(req.body);
   if (error) return resp.status(404).send(error.details[0].message);
 

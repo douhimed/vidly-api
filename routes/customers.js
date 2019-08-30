@@ -1,3 +1,5 @@
+const auth = require("../middlewares/auth");
+const admin = require("../middlewares/admin");
 const _ = require("lodash");
 const express = require("express");
 const router = express();
@@ -17,7 +19,7 @@ router.get("/:id", async (req, resp) => {
   resp.status(200).send(customer);
 });
 
-router.post("/", async (req, resp) => {
+router.post("/", auth, async (req, resp) => {
   const { error } = validateCustomer(req.body);
   if (error) return resp.status(404).send(error.details[0].message);
 
@@ -27,7 +29,7 @@ router.post("/", async (req, resp) => {
   resp.status(200).send(customer);
 });
 
-router.put("/:id", async (req, resp) => {
+router.put("/:id", auth, async (req, resp) => {
   const { error } = validateCustomer(req.body);
   if (error) return resp.status(404).send(error.details[0].message);
 
@@ -43,7 +45,7 @@ router.put("/:id", async (req, resp) => {
   resp.status(200).send(customer);
 });
 
-router.delete("/:id", async (req, resp) => {
+router.delete("/:id", [auth, admin], async (req, resp) => {
   const customer = await Customer.findByIdAndRemove(req.params.id);
   if (!customer)
     return resp

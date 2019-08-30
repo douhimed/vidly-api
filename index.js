@@ -17,7 +17,8 @@ const dbName = "vidly";
 mongoose
   .connect(`mongodb://localhost:27017/${dbName}`, {
     useCreateIndex: true,
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useFindAndModify: false
   })
   .then(console.log(`Connected to ${dbName}`))
   .catch(err => console.log("Error : ", err.message));

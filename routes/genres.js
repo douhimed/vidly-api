@@ -1,3 +1,5 @@
+const auth = require("../middlewares/auth");
+const admin = require("../middlewares/admin");
 const _ = require("lodash");
 const express = require("express");
 const router = express();
@@ -14,7 +16,7 @@ router.get("/:id", async (req, resp) => {
   resp.status(200).send(genre);
 });
 
-router.post("/", async (req, resp) => {
+router.post("/", auth, async (req, resp) => {
   const { error } = validate(req.body);
   if (error) return resp.status(404).send(error.details[0].message);
 
@@ -24,7 +26,7 @@ router.post("/", async (req, resp) => {
   resp.status(200).send(genre);
 });
 
-router.put("/:id", async (req, resp) => {
+router.put("/:id", auth, async (req, resp) => {
   const { error } = validate(req.body);
   if (error) return resp.status(404).send(error.details[0].message);
 
@@ -42,7 +44,7 @@ router.put("/:id", async (req, resp) => {
   resp.status(200).send(genre);
 });
 
-router.delete("/:id", async (req, resp) => {
+router.delete("/:id", [auth, admin], async (req, resp) => {
   const genre = await Genre.findByIdAndRemove(req.params.id);
 
   if (!genre)

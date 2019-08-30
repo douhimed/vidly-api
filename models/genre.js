@@ -1,7 +1,7 @@
 const Joi = require("joi");
 const mongoose = require("mongoose");
 
-const genreSchema = mongoose.Schema({
+const genreSchema = new mongoose.Schema({
   name: { type: String, required: true, minlength: 3, maxlength: 50 }
 });
 

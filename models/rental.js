@@ -1,7 +1,7 @@
 const Joi = require("joi");
 const mongoose = require("mongoose");
 
-const rentalSchema = mongoose.Schema({
+const rentalSchema = new mongoose.Schema({
   movie: {
     type: new mongoose.Schema({
       title: {
