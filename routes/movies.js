@@ -1,3 +1,4 @@
+const _ = require("lodash");
 const express = require("express");
 const router = express();
 const { validateMovie, Movie } = require("../models/movie");
@@ -23,12 +24,10 @@ router.post("/", async (req, resp) => {
   const genre = await Genre.findById(req.body.genreID);
   if (!genre) return resp.status(404).send("The Genre was Not Found");
 
-  const movie = new Movie({
-    title: req.body.title,
-    genre: genre,
-    numberInStock: req.body.numberInStock,
-    dailyRentalRate: req.body.dailyRentalRate
-  });
+  const movie = new Movie(
+    _.pick(req.body, ["title", "numberInStock", "dailyRentalRate"])
+  );
+  movie.genre = genre;
 
   await movie.save();
   resp.status(200).send(movie);

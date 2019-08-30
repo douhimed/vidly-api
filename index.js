@@ -3,13 +3,22 @@ const mongoose = require("mongoose");
 const app = express();
 const Joi = require("joi");
 Joi.objectId = require("joi-objectid")(Joi);
+const config = require("config");
+
+if (!config.get("jwtPrivateKey")) {
+  console.log("FATAL ERROR : my jwtPrivateKey is not defined");
+  process.exit(1);
+}
 
 app.use(express.json());
 
 const dbName = "vidly";
 
 mongoose
-  .connect(`mongodb://localhost:27017/${dbName}`, { useNewUrlParser: true })
+  .connect(`mongodb://localhost:27017/${dbName}`, {
+    useCreateIndex: true,
+    useNewUrlParser: true
+  })
   .then(console.log(`Connected to ${dbName}`))
   .catch(err => console.log("Error : ", err.message));
 
@@ -27,6 +36,12 @@ app.use("/movies", moviesRouter);
 
 const rentalsRouter = require("./routes/rentals");
 app.use("/rentals", rentalsRouter);
+
+const usersRouter = require("./routes/users");
+app.use("/users", usersRouter);
+
+const authRouter = require("./routes/auth");
+app.use("/login", authRouter);
 
 const port = process.env.port || 3000;
 app.listen(port, () => console.log("is connected to the port ", port));

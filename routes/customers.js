@@ -1,3 +1,4 @@
+const _ = require("lodash");
 const express = require("express");
 const router = express();
 const { validateCustomer, Customer } = require("../models/customer");
@@ -20,10 +21,7 @@ router.post("/", async (req, resp) => {
   const { error } = validateCustomer(req.body);
   if (error) return resp.status(404).send(error.details[0].message);
 
-  const customer = new Customer({
-    name: req.body.name,
-    phone: req.body.phone
-  });
+  const customer = new Customer(_.pick(req.body, ["name", "phone"]));
 
   await customer.save();
   resp.status(200).send(customer);
@@ -35,11 +33,7 @@ router.put("/:id", async (req, resp) => {
 
   const customer = await Customer.findByIdAndUpdate(
     req.params.id,
-    {
-      name: req.body.name,
-      isGold: req.body.isGold,
-      phone: req.body.phone
-    },
+    _.pick(req.body, ["name", "phone", "isGold"]),
     { new: true }
   );
 

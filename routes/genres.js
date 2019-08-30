@@ -1,3 +1,4 @@
+const _ = require("lodash");
 const express = require("express");
 const router = express();
 const { validate, Genre } = require("../models/genre");
@@ -17,9 +18,7 @@ router.post("/", async (req, resp) => {
   const { error } = validate(req.body);
   if (error) return resp.status(404).send(error.details[0].message);
 
-  const genre = new Genre({
-    name: req.body.name
-  });
+  const genre = new Genre(_.pick(req.body, "name"));
 
   await genre.save();
   resp.status(200).send(genre);
@@ -31,7 +30,7 @@ router.put("/:id", async (req, resp) => {
 
   const genre = await Genre.findByIdAndUpdate(
     req.params.id,
-    { name: req.body.name },
+    _.pick(req.body, "name"),
     { new: true }
   );
 

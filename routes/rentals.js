@@ -1,3 +1,4 @@
+const _ = require("lodash");
 const express = require("express");
 const mongoose = require("mongoose");
 const router = express();
@@ -38,17 +39,8 @@ router.post("/", async (req, resp) => {
       .send("The customer with the given id was not found");
 
   const rental = new Rental({
-    movie: {
-      _id: movie._id,
-      title: movie.title,
-      dailyRentalrate: movie.dailyRentalrate
-    },
-    customer: {
-      _id: customer._id,
-      name: customer.name,
-      phone: customer.phone,
-      isGold: customer.isGold
-    }
+    movie: _.pick(movie, ["_id", "title", "dailyRentalRate"]),
+    customer: _.pick(customer, ["_id", "name", "phone", "isGold"])
   });
 
   try {
