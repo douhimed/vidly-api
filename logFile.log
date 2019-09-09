@@ -1,67 +1,107 @@
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-05T01:10:44.219Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-05T01:10:58.346Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-05T01:11:03.131Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-05T01:11:03.140Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-05T01:11:05.487Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-05T01:11:05.495Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-05T01:11:28.271Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-05T01:11:28.279Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-05T01:12:03.597Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-05T01:12:47.803Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-05T01:13:27.799Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-05T01:14:19.985Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-05T01:14:19.993Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:08:34.696Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:09:40.886Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:10:10.413Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:10:10.424Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:11:05.617Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:11:05.629Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:11:36.039Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:11:36.051Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:11:48.624Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:11:48.635Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:13:02.891Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:13:02.903Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:13:51.218Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:13:51.229Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:14:17.127Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:14:17.140Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:16:34.669Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:16:34.685Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:17:02.233Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:17:02.255Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:17:16.713Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:17:16.725Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:17:37.637Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:17:37.649Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:18:01.555Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:18:01.567Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:19:00.973Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:19:00.985Z"}
-{"message":"Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"","stack":"CastError: Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"\n    at new CastError (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\error\\cast.js:29:11)\n    at ObjectId.Object.<anonymous>.ObjectId.cast (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schema\\objectid.js:244:11)\n    at ObjectId.Object.<anonymous>.SchemaType.applySetters (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:948:12)\n    at ObjectId.Object.<anonymous>.SchemaType._castForQuery (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1362:15)\n    at ObjectId.Object.<anonymous>.SchemaType.castForQuery (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1352:15)\n    at ObjectId.Object.<anonymous>.SchemaType.castForQueryWrapper (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1331:15)\n    at cast (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\cast.js:307:32)\n    at model.Query.Object.<anonymous>.Query.cast (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\query.js:4607:12)\n    at model.Query.Object.<anonymous>.Query._castConditions (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\query.js:1790:10)\n    at model.Query.<anonymous> (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\query.js:2045:8)\n    at model.Query._wrappedThunk [as _findOne] (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\helpers\\query\\wrapThunk.js:16:8)\n    at process.nextTick (D:\\Workshops and projects\\node js\\vidly\\node_modules\\kareem\\index.js:369:33)\n    at process._tickCallback (internal/process/next_tick.js:61:11)","name":"CastError","stringValue":"\"1\"","kind":"ObjectId","value":"1","path":"_id","level":"error","timestamp":"2019-09-08T23:19:03.127Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:20:47.418Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:20:47.432Z"}
-{"message":"Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"","stack":"CastError: Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"\n    at new CastError (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\error\\cast.js:29:11)\n    at ObjectId.Object.<anonymous>.ObjectId.cast (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schema\\objectid.js:244:11)\n    at ObjectId.Object.<anonymous>.SchemaType.applySetters (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:948:12)\n    at ObjectId.Object.<anonymous>.SchemaType._castForQuery (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1362:15)\n    at ObjectId.Object.<anonymous>.SchemaType.castForQuery (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1352:15)\n    at ObjectId.Object.<anonymous>.SchemaType.castForQueryWrapper (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1331:15)\n    at cast (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\cast.js:307:32)\n    at model.Query.Object.<anonymous>.Query.cast (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\query.js:4607:12)\n    at model.Query.Object.<anonymous>.Query._castConditions (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\query.js:1790:10)\n    at model.Query.<anonymous> (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\query.js:2045:8)\n    at model.Query._wrappedThunk [as _findOne] (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\helpers\\query\\wrapThunk.js:16:8)\n    at process.nextTick (D:\\Workshops and projects\\node js\\vidly\\node_modules\\kareem\\index.js:369:33)\n    at process._tickCallback (internal/process/next_tick.js:61:11)","name":"CastError","stringValue":"\"1\"","kind":"ObjectId","value":"1","path":"_id","level":"error","timestamp":"2019-09-08T23:20:49.597Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:21:05.133Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:21:05.145Z"}
-{"message":"Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"","stack":"CastError: Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"\n    at new CastError (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\error\\cast.js:29:11)\n    at ObjectId.Object.<anonymous>.ObjectId.cast (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schema\\objectid.js:244:11)\n    at ObjectId.Object.<anonymous>.SchemaType.applySetters (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:948:12)\n    at ObjectId.Object.<anonymous>.SchemaType._castForQuery (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1362:15)\n    at ObjectId.Object.<anonymous>.SchemaType.castForQuery (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1352:15)\n    at ObjectId.Object.<anonymous>.SchemaType.castForQueryWrapper (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1331:15)\n    at cast (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\cast.js:307:32)\n    at model.Query.Object.<anonymous>.Query.cast (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\query.js:4607:12)\n    at model.Query.Object.<anonymous>.Query._castConditions (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\query.js:1790:10)\n    at model.Query.<anonymous> (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\query.js:2045:8)\n    at model.Query._wrappedThunk [as _findOne] (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\helpers\\query\\wrapThunk.js:16:8)\n    at process.nextTick (D:\\Workshops and projects\\node js\\vidly\\node_modules\\kareem\\index.js:369:33)\n    at process._tickCallback (internal/process/next_tick.js:61:11)","name":"CastError","stringValue":"\"1\"","kind":"ObjectId","value":"1","path":"_id","level":"error","timestamp":"2019-09-08T23:21:07.286Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:21:17.333Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:21:17.344Z"}
-{"message":"Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"","stack":"CastError: Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"\n    at new CastError (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\error\\cast.js:29:11)\n    at ObjectId.Object.<anonymous>.ObjectId.cast (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schema\\objectid.js:244:11)\n    at ObjectId.Object.<anonymous>.SchemaType.applySetters (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:948:12)\n    at ObjectId.Object.<anonymous>.SchemaType._castForQuery (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1362:15)\n    at ObjectId.Object.<anonymous>.SchemaType.castForQuery (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1352:15)\n    at ObjectId.Object.<anonymous>.SchemaType.castForQueryWrapper (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1331:15)\n    at cast (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\cast.js:307:32)\n    at model.Query.Object.<anonymous>.Query.cast (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\query.js:4607:12)\n    at model.Query.Object.<anonymous>.Query._castConditions (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\query.js:1790:10)\n    at model.Query.<anonymous> (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\query.js:2045:8)\n    at model.Query._wrappedThunk [as _findOne] (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\helpers\\query\\wrapThunk.js:16:8)\n    at process.nextTick (D:\\Workshops and projects\\node js\\vidly\\node_modules\\kareem\\index.js:369:33)\n    at process._tickCallback (internal/process/next_tick.js:61:11)","name":"CastError","stringValue":"\"1\"","kind":"ObjectId","value":"1","path":"_id","level":"error","timestamp":"2019-09-08T23:21:19.491Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:22:09.224Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:22:09.235Z"}
-{"message":"Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"","stack":"CastError: Cast to ObjectId failed for value \"1\" at path \"_id\" for model \"Genre\"\n    at new CastError (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\error\\cast.js:29:11)\n    at ObjectId.Object.<anonymous>.ObjectId.cast (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schema\\objectid.js:244:11)\n    at ObjectId.Object.<anonymous>.SchemaType.applySetters (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:948:12)\n    at ObjectId.Object.<anonymous>.SchemaType._castForQuery (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1362:15)\n    at ObjectId.Object.<anonymous>.SchemaType.castForQuery (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1352:15)\n    at ObjectId.Object.<anonymous>.SchemaType.castForQueryWrapper (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\schematype.js:1331:15)\n    at cast (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\cast.js:307:32)\n    at model.Query.Object.<anonymous>.Query.cast (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\query.js:4607:12)\n    at model.Query.Object.<anonymous>.Query._castConditions (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\query.js:1790:10)\n    at model.Query.<anonymous> (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\query.js:2045:8)\n    at model.Query._wrappedThunk [as _findOne] (D:\\Workshops and projects\\node js\\vidly\\node_modules\\mongoose\\lib\\helpers\\query\\wrapThunk.js:16:8)\n    at process.nextTick (D:\\Workshops and projects\\node js\\vidly\\node_modules\\kareem\\index.js:369:33)\n    at process._tickCallback (internal/process/next_tick.js:61:11)","name":"CastError","stringValue":"\"1\"","kind":"ObjectId","value":"1","path":"_id","level":"error","timestamp":"2019-09-08T23:22:11.401Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:22:27.048Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:22:27.060Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:22:36.148Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:22:36.161Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:24:03.539Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:24:03.550Z"}
-{"level":"error","timestamp":"2019-09-08T23:24:05.691Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:24:34.149Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:24:34.161Z"}
-{"level":"error","timestamp":"2019-09-08T23:24:36.311Z"}
-{"level":"info","message":"Connected to vidly","timestamp":"2019-09-08T23:26:04.501Z"}
-{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-08T23:26:04.512Z"}
-{"level":"error","timestamp":"2019-09-08T23:26:06.647Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:38:44.761Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:38:44.777Z"}
+{"level":"error","timestamp":"2019-09-09T20:38:46.947Z"}
+{"message":"id is not defined","stack":"ReferenceError: id is not defined\n    at id (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:44:43)","level":"error","timestamp":"2019-09-09T20:38:47.123Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:40:49.725Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:40:49.740Z"}
+{"level":"error","timestamp":"2019-09-09T20:40:51.940Z"}
+{"message":"id is not defined","stack":"ReferenceError: id is not defined\n    at id (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:44:43)","level":"error","timestamp":"2019-09-09T20:40:52.042Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:42:44.935Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:42:44.950Z"}
+{"level":"error","timestamp":"2019-09-09T20:42:47.150Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:43:30.647Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:43:30.659Z"}
+{"level":"error","timestamp":"2019-09-09T20:43:32.878Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:43:59.172Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:43:59.194Z"}
+{"level":"error","timestamp":"2019-09-09T20:44:01.383Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:45:15.215Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:45:15.227Z"}
+{"level":"error","timestamp":"2019-09-09T20:45:17.374Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:47:33.984Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:47:34.009Z"}
+{"level":"error","timestamp":"2019-09-09T20:47:36.241Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:48:11.900Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:48:11.921Z"}
+{"level":"error","timestamp":"2019-09-09T20:48:14.026Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:48:21.607Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:48:21.619Z"}
+{"level":"error","timestamp":"2019-09-09T20:48:23.836Z"}
+{"message":"id is not defined","stack":"ReferenceError: id is not defined\n    at id (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:44:43)","level":"error","timestamp":"2019-09-09T20:48:24.104Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:50:39.561Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:50:39.573Z"}
+{"level":"error","timestamp":"2019-09-09T20:50:41.761Z"}
+{"message":"id is not defined","stack":"ReferenceError: id is not defined\n    at id (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:39:43)","level":"error","timestamp":"2019-09-09T20:50:41.940Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:51:21.245Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:51:21.269Z"}
+{"level":"error","timestamp":"2019-09-09T20:51:23.495Z"}
+{"message":"id is not defined","stack":"ReferenceError: id is not defined\n    at id (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:39:43)","level":"error","timestamp":"2019-09-09T20:51:23.684Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:51:42.924Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:51:42.944Z"}
+{"level":"error","timestamp":"2019-09-09T20:51:45.208Z"}
+{"message":"id is not defined","stack":"ReferenceError: id is not defined\n    at id (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:43:43)","level":"error","timestamp":"2019-09-09T20:51:45.432Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:53:03.584Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:53:03.606Z"}
+{"level":"error","timestamp":"2019-09-09T20:53:05.814Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:53:40.042Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:53:40.065Z"}
+{"level":"error","timestamp":"2019-09-09T20:53:42.319Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:54:22.294Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:54:22.314Z"}
+{"level":"error","timestamp":"2019-09-09T20:54:24.510Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:54:37.583Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:54:37.604Z"}
+{"level":"error","timestamp":"2019-09-09T20:54:39.790Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:54:52.704Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:54:52.725Z"}
+{"level":"error","timestamp":"2019-09-09T20:54:54.988Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T20:54:55.177Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:55:48.761Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:55:48.785Z"}
+{"level":"error","timestamp":"2019-09-09T20:55:51.032Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T20:55:51.211Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:56:41.058Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:56:41.071Z"}
+{"level":"error","timestamp":"2019-09-09T20:56:43.325Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T20:56:43.542Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:57:08.664Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:57:08.685Z"}
+{"level":"error","timestamp":"2019-09-09T20:57:10.807Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T20:57:10.962Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T20:57:10.973Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:57:43.560Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:57:43.583Z"}
+{"level":"error","timestamp":"2019-09-09T20:57:45.781Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T20:57:45.947Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T20:57:45.960Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:57:58.546Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:57:58.558Z"}
+{"level":"error","timestamp":"2019-09-09T20:58:00.820Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T20:58:01.143Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T20:58:01.160Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:58:16.512Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:58:16.532Z"}
+{"level":"error","timestamp":"2019-09-09T20:58:18.780Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T20:58:19.063Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T20:58:19.076Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:59:02.199Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:59:02.214Z"}
+{"level":"error","timestamp":"2019-09-09T20:59:04.425Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T20:59:04.646Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T20:59:04.663Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:59:29.650Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:59:29.662Z"}
+{"level":"error","timestamp":"2019-09-09T20:59:31.901Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T20:59:32.190Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T20:59:32.207Z"}
+{"message":"id is not defined","stack":"ReferenceError: id is not defined\n    at id (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:54:43)","level":"error","timestamp":"2019-09-09T20:59:32.242Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T20:59:58.123Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T20:59:58.147Z"}
+{"level":"error","timestamp":"2019-09-09T21:00:00.351Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T21:00:00.512Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T21:00:00.528Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T21:00:10.313Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T21:00:10.337Z"}
+{"level":"error","timestamp":"2019-09-09T21:00:12.605Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T21:00:12.906Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T21:00:12.923Z"}

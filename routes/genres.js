@@ -20,7 +20,7 @@ router.get("/:id", validateObjectID, async (req, resp) => {
 
 router.post("/", auth, async (req, resp) => {
   const { error } = validate(req.body);
-  if (error) return resp.status(404).send(error.details[0].message);
+  if (error) return resp.status(400).send(error.details[0].message);
 
   const genre = new Genre(_.pick(req.body, "name"));
 
@@ -30,17 +30,16 @@ router.post("/", auth, async (req, resp) => {
 
 router.put("/:id", [auth, validateObjectID], async (req, resp) => {
   const { error } = validate(req.body);
-  if (error) return resp.status(404).send(error.details[0].message);
+  if (error) return resp.status(400).send(error.details[0].message);
 
-  const genre = await Genre.findByIdAndUpdate(
+  genre = await Genre.findByIdAndUpdate(
     req.params.id,
     _.pick(req.body, "name"),
     { new: true }
   );
-
   if (!genre)
     return resp
-      .status(400)
+      .status(404)
       .send("The genre withe the ID = " + id + " Not found");
 
   resp.status(200).send(genre);
