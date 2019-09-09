@@ -105,3 +105,8 @@
 {"level":"error","timestamp":"2019-09-09T21:00:12.605Z"}
 {"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T21:00:12.906Z"}
 {"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T21:00:12.923Z"}
+{"level":"info","message":"Connected to vidly","timestamp":"2019-09-09T21:00:25.335Z"}
+{"level":"info","message":"Listening on port 3000...","timestamp":"2019-09-09T21:00:25.349Z"}
+{"level":"error","timestamp":"2019-09-09T21:00:27.487Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T21:00:27.632Z"}
+{"message":"resp.status(...).send(...).message is not a function","stack":"TypeError: resp.status(...).send(...).message is not a function\n    at message (D:\\Workshops and projects\\node js\\vidly\\routes\\genres.js:59:6)","level":"error","timestamp":"2019-09-09T21:00:27.649Z"}
