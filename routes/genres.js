@@ -14,7 +14,7 @@ router.get("/", async (req, resp) => {
 router.get("/:id", validateObjectID, async (req, resp) => {
   const genre = await Genre.findById(req.params.id);
   if (!genre)
-    resp.status(404).send("The genre with the given ID was not found.");
+    return resp.status(404).send("The genre with the given ID was not found.");
   resp.status(200).send(genre);
 });
 
@@ -53,10 +53,7 @@ router.delete("/:id", [auth, validateObjectID, admin], async (req, resp) => {
       .status(400)
       .send("The genre withe the ID = " + id + " Not found");
 
-  resp
-    .status(200)
-    .send(genre)
-    .message("this genre was deleted");
+  resp.status(200).send(genre);
 });
 
 // local db ==> Array
