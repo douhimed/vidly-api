@@ -7,6 +7,7 @@ const moviesRouter = require("../routes/movies");
 const rentalsRouter = require("../routes/rentals");
 const usersRouter = require("../routes/users");
 const authRouter = require("../routes/auth");
+const returns = require("../routes/returns");
 
 module.exports = function(app) {
   app.use(express.json());
@@ -17,5 +18,6 @@ module.exports = function(app) {
   app.use("/rentals", rentalsRouter);
   app.use("/users", usersRouter);
   app.use("/login", authRouter);
+  app.use("/returns", returns);
   app.use(error);
 };

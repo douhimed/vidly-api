@@ -1,13 +1,15 @@
 const mongoose = require("mongoose");
 const winston = require("winston");
+const config = require("config");
 
 module.exports = function() {
   const dbName = "vidly";
   mongoose
-    .connect(`mongodb://localhost:27017/${dbName}`, {
+    .connect(config.get("db"), {
       useCreateIndex: true,
       useNewUrlParser: true,
-      useFindAndModify: false
+      useFindAndModify: false,
+      useUnifiedTopology: true
     })
     .then(winston.info(`Connected to ${dbName}`));
 };
